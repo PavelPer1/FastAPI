@@ -1,12 +1,10 @@
-import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
-from sqlalchemy import create_engine, text
-from src.models.database.database import engine
-from src.models.database.users import Base
+from auth_service.src.database import engine
+from auth_service.src.models.user import Base
 
-from src.api import main_router
+from auth_service.src.api import main_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
