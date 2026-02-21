@@ -1,5 +1,5 @@
 from auth_service.src.database import new_session
-from src.models.database.users import User
+from auth_service.src.models.users import User
 from sqlalchemy import select
 
 

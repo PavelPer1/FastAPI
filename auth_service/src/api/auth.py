@@ -5,7 +5,7 @@ from fastapi import HTTPException, Response
 from starlette import status
 
 from auth_service.src.models.crud import register_user, get_users, get_user
-from src.schemas.users import UserLoginScheme
+from auth_service.src.schemas.user import UserLoginScheme
 
 router = APIRouter()
 
