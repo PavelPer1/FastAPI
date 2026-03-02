@@ -9,6 +9,7 @@ pydantic[standard]==2.5.0
 pydantic-settings==2.1.0
 python-dotenv==1.0.0
 email-validator==2.1.0
-psycopg2-binary==2.9.9
+psycopg2-binary>=2.9.10
 authx
 openpyxl
+bcrypt>=4.0.0
